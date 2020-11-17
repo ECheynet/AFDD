@@ -1,6 +1,7 @@
 # Automated Frequency Domain Decomposition (AFDD)
 Automated Modal parameters identification from ambient vibrations measurement 
 
+[![View Automated Frequency Domain Decomposition (AFDD) on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://se.mathworks.com/matlabcentral/fileexchange/57153-automated-frequency-domain-decomposition-afdd)
 
 ## Summary
 
