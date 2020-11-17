@@ -11,11 +11,8 @@ The automated Frequency Domain Decomposition presented here is inspired by the F
 The submission contains:
 
 - The function AFDD
-
-- an Matlab livescript file Documentation.mlx
-
-- acceleration data beamData.m (4 Mb)
-
+- A Matlab livescript file Documentation.mlx
+- Acceleration data beamData.m (4 Mb)
 - The function pickpeaks.m [5]
 
 Any comment, suggestion and question is welcome.
