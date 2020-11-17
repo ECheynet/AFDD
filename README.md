@@ -1,5 +1,5 @@
-# AFDD
-Automated Modal parameters identification from ambient vibrations measurement
+# Automated Frequency Domain Decomposition (AFDD)
+Automated Modal parameters identification from ambient vibrations measurement 
 
 
 ## Summary
