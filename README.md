@@ -5,8 +5,7 @@ Automated Modal parameters identification from ambient vibrations measurement
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4277622.svg)](https://doi.org/10.5281/zenodo.4277622)
 
 ## Summary
-
-The automated Frequency Domain Decomposition presented here is inspired by the Frequency Domain Decomposition (FDD) introduced by [1, 2]. The goal is to identify the mode shapes, eigenfrequencies and modal damping ratios from acceleration records obtained during structural health monitoring of civil engineering structures subjected to ambient noise. In this submission, an automated procedure is implemented in addition to the manual one proposed by [3]. For the automated procedure, I am using the peak picking function “pickpeaks” developed by [4] and available in [5], which was much more efficient than the Matlab function "findpeaks" for this purpose. I am, therefore, indebted to [3-5] for their previous works. The modal damping ratios are determined for each mode by using [6]. The acceleration data comes from a time-domain simulation of a clamped-free beam response to white noise excitation. The target modal properties from the beam come from [7].
+The automated Frequency Domain Decomposition presented was applied in [1]. It inspired by the Frequency Domain Decomposition (FDD) introduced by [2, 3]. The goal is to identify the mode shapes, eigenfrequencies and modal damping ratios from acceleration records obtained during structural health monitoring of civil engineering structures subjected to ambient noise. In this submission, an automated procedure is implemented in addition to the manual one proposed by [4]. For the automated procedure, I am using the peak picking function “pickpeaks” developed by [5] and available in [6], which was much more efficient than the Matlab function "findpeaks" for this purpose. I am, therefore, indebted to [4-6] for their previous works. The modal damping ratios are determined for each mode by using [7]. The acceleration data comes from a time-domain simulation of a clamped-free beam response to white noise excitation. The target modal properties from the beam come from [8].
 
 ## Content
 The submission contains:
@@ -14,22 +13,24 @@ The submission contains:
 - The function AFDD
 - A Matlab livescript file Documentation.mlx
 - Acceleration data beamData.m (4 Mb)
-- The function pickpeaks.m [5]
+- The function pickpeaks.m [6]
 
 Any comment, suggestion and question is welcome.
 
 ## References
 
-[1] Brincker, R.; Zhang, L.; Andersen, P. (2001). "Modal identification of output-only systems using frequency domain decomposition". Smart Materials and Structures 10 (3): 441. doi:10.1088/0964-1726/10/3/303.
+[1] Cheynet, E., Jakobsen, J. B., & Snæbjörnsson, J. (2017). Damping estimation of large wind-sensitive structures. Procedia engineering, 199, 2047-2053.
 
-[2] Brincker, R., Zhang, L., & Andersen, P. (2000, February). Modal identification from ambient responses using frequency domain decomposition. In Proc. of the 18*‘International Modal Analysis Conference(IMAC), San Antonio, Texas.
+[2] Brincker, R.; Zhang, L.; Andersen, P. (2001). "Modal identification of output-only systems using frequency domain decomposition". Smart Materials and Structures 10 (3): 441. doi:10.1088/0964-1726/10/3/303.
 
-[3] https://se.mathworks.com/matlabcentral/fileexchange/50988-frequency-domain-decomposition--fdd-
+[3] Brincker, R., Zhang, L., & Andersen, P. (2000, February). Modal identification from ambient responses using frequency domain decomposition. In Proc. of the 18*‘International Modal Analysis Conference(IMAC), San Antonio, Texas.
 
-[4] Antoine Liutkus. Scale-Space Peak Picking. [Research Report] Inria Nancy - Grand Est (Villers-lès-Nancy, France). 2015. <hal-01103123v2>.
-  
-[5] https://se.mathworks.com/matlabcentral/fileexchange/42927-pickpeaks-v-select-display-
+[4] https://se.mathworks.com/matlabcentral/fileexchange/50988-frequency-domain-decomposition--fdd-
 
-[6] https://se.mathworks.com/matlabcentral/fileexchange/55557-modal-parameters-identification-from-ambient-vibrations--sdof-
+[5] Antoine Liutkus. Scale-Space Peak Picking. [Research Report] Inria Nancy - Grand Est (Villers-lès-Nancy, France). 2015. .
 
-[7] https://se.mathworks.com/matlabcentral/fileexchange/52075-eigen-value-calculation-of-a-continuous-beam--transverse-vibrations-
+[6] https://se.mathworks.com/matlabcentral/fileexchange/42927-pickpeaks-v-select-display-
+
+[7] https://se.mathworks.com/matlabcentral/fileexchange/55557-modal-parameters-identification-from-ambient-vibrations--sdof-
+
+[8] https://se.mathworks.com/matlabcentral/fileexchange/52075-eigen-value-calculation-of-a-continuous-beam--transverse-vibrations-
