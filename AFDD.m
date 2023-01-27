@@ -269,9 +269,9 @@ end
         ylabel('1st Singular values of the PSD matrix (db)')
         Fp=[];% Frequencies related to selected peaks
         while numel(Fp)<Nmodes
-            myRec=getrect;                                                                          % Draw a rectangle around the peak
-            [~,P1]=min(abs(f-myRec(1)));
-            [~,P2]=min(abs(f-(myRec(1)+myRec(3))));
+            myRec=drawrectangle;                                                                          % Draw a rectangle around the peak
+            [~,P1]=min(abs(f-myRec.Position(1)));
+            [~,P2]=min(abs(f-(myRec.Position(1)+myRec.Position(3))));
             [~,P3]=max(S(P1:P2));
             indPeak=P3+P1-1;                                                                         % Frequency at the selected peak
             scatter(f(indPeak),mag2db(S(indPeak)),'MarkerEdgeColor','b','MarkerFaceColor','b')         % Mark this peak
